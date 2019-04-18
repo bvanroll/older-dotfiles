@@ -1,0 +1,8 @@
+case $BLOCK_BUTTON in
+    3) xbacklight -set 20 ;;
+    4) xbacklight -inc 10 ;;
+    5) xbacklight -dec 10 ;;
+
+esac
+
+printf "%.0f" "$(xbacklight -get)"
