@@ -1,3 +1,3 @@
 function l
-	lsd
+	lsd $argv
 end

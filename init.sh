@@ -40,5 +40,28 @@ fi
 ln -s ./.fishrc ~/.fishrc
 
 
+if [ -d ~/.config/omf ]; then
+    mv ./.config/omf ~/.config/omfBACKUP
+fi
+ln -s ./omf ~/.config/omf
+
+if [ -d ~/.config/polybar ]; then
+    mv ./.config/polybar ~/.config/polybarBACKUP
+fi
+ln -s ./polybar ~/.config/polybar
+
+
+if [ -d ~/.config/ranger ]; then
+    mv ./.config/ranger ~/.config/rangerBACKUP
+fi
+ln -s ./ranger ~/.config/ranger
+
+
+if [ -d ~/.config/rofi ]; then
+    mv ./.config/rofi ~/.config/rofiBACKUP
+fi
+ln -s ./rofi ~/.config/rofi
+
+
 
 
